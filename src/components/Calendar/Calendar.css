@@ -1,0 +1,88 @@
+#container-concerts {
+    width: 100%;
+    min-height: 600px;
+}
+
+#left-arrow, #right-arrow{
+    width: 15%;
+    height: 80%;
+    float: left;
+    font-size: 6em;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+    margin-top: 23%;
+    z-index: 1;
+}
+
+#left-arrow:hover, #right-arrow:hover{
+    color: rgba(191,0,0,0.7);
+    cursor: pointer;
+}
+
+.descr-show { 
+    width: 30%;
+    min-height: 40%;
+    background-color: rgba(0,0,0,0.7);
+    border: solid 2px  rgba(191,0,0,0.7);
+    border-left: none;
+    margin-top: 21%;
+    float: left;
+    text-align: right;
+}
+.info-show h3, .info-show h4, .info-show h5 {
+    margin: 10px;
+    color: red;
+}
+.info-show h3{ font-size: 4em; font-weight: bold; }
+.info-show h4 { font-size: 2em; color: white; }
+.info-show h5 { font-size: 1.3em; font-weight: bold; }
+
+#googleMap {
+    -webkit-filter: grayscale(100%);
+    width: 35%;
+    height: 450px;
+    margin-top: 10%;
+    float: left;
+}
+
+#googleMap:hover {
+    -webkit-filter: grayscale(0%);
+}
+
+@media only screen and (max-width: 768px) {
+    #container-concerts{
+        margin-top: 13%;
+    }
+
+    #googleMap{ 
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .descr-show{
+        float:none;
+        width: 60%;
+        min-height: 200px;
+        position: absolute;
+        margin-left: 15%;
+        margin-top: 0;
+        text-align: center;
+    }
+    #googleMap{
+       visibility: hidden
+    }
+    #right-arrow{
+        float: right;
+        font-size: 3em;
+    }
+    #left-arrow{
+        font-size: 3em;
+        float: left;
+    }
+
+    #container-concerts{
+        min-height: 300px;
+        margin-top: 55%;
+    }
+}

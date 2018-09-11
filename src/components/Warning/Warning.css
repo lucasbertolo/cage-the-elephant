@@ -1,0 +1,109 @@
+/*CONTAINER BOX*/
+.container-warning{
+  width: 230px;
+  margin-left: 30%;
+  height: 400px;
+  top: 100px;
+  right: 50px;
+  position: fixed;
+  z-index: 1;
+}
+
+/*THOUGHT BOX */
+.thought{
+   	background-color: rgba(244, 160, 83,1);
+    border-radius: 15px;
+    width: 200px;
+    min-height: 100px;
+    float: right;
+    padding: 10px;
+    font-style: italic;
+    position: relative;
+}
+.thought:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(244, 160, 83,1);
+    bottom: -20px;
+    left: 20%;
+}
+
+/* GHOST */
+.field {
+  margin: 5% auto;
+  display: table;
+}
+
+[class*="ghost"] {
+  margin: 25px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+[class*="ghost"] .head {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 150px;
+  width: 152px;
+  background: rgba(213, 74, 74, 1);
+  position: relative;
+}
+[class*="ghost"] .head .eye,
+[class*="ghost"] .head .eyeBack {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  position: relative;
+}
+[class*="ghost"] .head .eyeBack {
+  height: 50px;
+  width: 50px;
+  background: white;
+}
+[class*="ghost"] .head .eyeBack:first-child {
+  margin: 50px 0 0 25px;
+  float: left;
+}
+[class*="ghost"] .head .eyeBack:last-child {
+  margin: 50px 25px 0 0;
+  float: right;
+}
+[class*="ghost"] .head .eye {
+  margin: 20% auto;
+  height: 25px;
+  width: 25px;
+  background: black;
+}
+[class*="ghost"] .legs {
+  height: 40px;
+  width: 0;
+  border-right: 38px solid rgba(213, 74, 74, 1);
+  border-left: 38px solid rgba(213, 74, 74, 1);
+  border-bottom: 40px solid transparent;
+  display: block;
+  float: left;
+}
+
+/*CLOSE BUTTON*/
+
+[class*='close-'] {
+  color: #777;
+  font: 22px/100% arial, sans-serif;
+  position: absolute;
+  right: 3px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 3px;
+  cursor: pointer
+}
+
+.close-thik:after {
+  content: '✖'; 
+}

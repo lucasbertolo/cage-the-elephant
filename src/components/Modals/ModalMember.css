@@ -1,0 +1,9 @@
+.modal-edge {
+	color: rgba(213, 74, 74, 1);
+	background-color: rgba(5, 0, 0, 0.8);
+}
+
+.modal-body{
+	background-color: rgba(5, 0, 0, 0.6);
+	color: white;
+}

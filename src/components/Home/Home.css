@@ -1,0 +1,66 @@
+.moon {
+	  width: 100px; 
+  	height: 100px; 
+  	border-radius: 50%; 
+  	box-shadow: 15px 15px 0 0 black; 
+	  margin: 0 auto;
+	  margin-top: 10%;
+} 
+
+.title {
+	background-color: transparent;
+	padding: 10px;
+	max-width: 60%;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+	position: relative;
+	height: 200px;
+	white-space: nowrap;
+}
+
+/* BORDAS TITULO */
+.title:before {
+  	content : "";
+  	position: absolute;
+  	left    : 50%;
+  	bottom  : 25%;
+  	height  : 1px;
+ 	  width   : 3%;  /* or 100px */
+	  border-left: 10px solid transparent; 
+  	border-right: 10px solid transparent; 
+  	border-top: 15px solid rgba(191,0,0,0.7);
+}
+
+.title:after {
+  	content : "";
+  	position: absolute;
+  	left    : 42%;
+  	bottom  : 95%;
+  	height  : 1px;
+ 	  width   : 20%;  /* or 100px */
+	  border-bottom: 10px solid rgba(191,0,0,0.7); 
+  	border-left: 3px solid transparent; 
+  	border-right: 3px solid transparent;
+}
+
+#logo {  
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  font-size: 4em;
+}
+
+@media only screen and (max-width: 768px) {
+  .moon{ 
+    margin-bottom: 50px; 
+    margin-top: 35%;
+  }
+  .title:after{
+    left: 45%;
+  }
+}
