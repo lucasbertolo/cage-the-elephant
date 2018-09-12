@@ -2,9 +2,10 @@
   "name": "cage",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lucasbertolo.github.io/cage-the-elephant",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "react": "^16.4.2",
-    "react-animated-css": "^1.0.4",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.2",
     "react-google-maps": "^9.4.5",
@@ -17,6 +18,8 @@
     "tachyons": "^4.11.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

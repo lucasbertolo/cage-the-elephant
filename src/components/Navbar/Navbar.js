@@ -26,7 +26,7 @@ class Navbar extends React.Component{
 						currentClassName="selected" 
 						onUpdate={this.updateSectionName}>						
 						
-					    <li><a href="/" aria-label="Home"><p data-tip="home"><GoCalendar/></p></a></li>
+					    <li><a href={process.env.PUBLIC_URL + "/"} aria-label="Home"><p data-tip="home"><GoCalendar/></p></a></li>
 					    <li><a href="about" aria-label="About"><p data-tip="about"><FaInfoCircle/></p></a></li>
 					    <li><a href="members" aria-label="Members"><p data-tip="members"><TiBook/></p></a></li>
 					    <li><a href="discography" aria-label="Disco"><p data-tip="discography"><MdLibraryMusic/></p></a></li>

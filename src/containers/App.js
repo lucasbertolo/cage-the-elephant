@@ -41,12 +41,12 @@ class App extends Component {
           <Navbar updatingSectionName={this.updatingSectionName}/>
           <Router>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About}/>
-              <Route path="/members" component={Members}/>
-              <Route path="/discography" component={Discography}/>
-              <Route path="/calendar" component={Calendar}/>              
-              <Route path="/contact" component={Contact}/>
+              <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+              <Route path={process.env.PUBLIC_URL +"/about"} component={About}/>
+              <Route path={process.env.PUBLIC_URL +"/members"} component={Members}/>
+              <Route path={process.env.PUBLIC_URL +"/discography"} component={Discography}/>
+              <Route path={process.env.PUBLIC_URL +"/calendar"} component={Calendar}/>              
+              <Route path={process.env.PUBLIC_URL +"/contact"} component={Contact}/>
             </Switch>
           </Router>       
         </ErrorBoundary>        
