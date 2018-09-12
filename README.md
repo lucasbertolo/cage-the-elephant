@@ -1,1 +1,1 @@
-:)
+Test using React loadable :)
