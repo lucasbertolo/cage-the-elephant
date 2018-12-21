@@ -25,11 +25,7 @@ class App extends Component {
       section: ''
     }
   }
-  updatingSectionName = (section) => {
-      // this.setState({section})
-      console.log("section", section)
-      // return "teste"
-  }  
+  
 
   render() {     
     
@@ -38,7 +34,7 @@ class App extends Component {
       <div className="App">  
         <ErrorBoundary>            
           <Header section={this.state.section}/> 
-          <Navbar updatingSectionName={this.updatingSectionName}/>
+          <Navbar/>
           <Router>
             <Switch>
               <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />

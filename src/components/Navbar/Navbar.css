@@ -26,6 +26,25 @@
 
 @media only screen and (max-width: 768px) {
   #content-navbar{
-   	visibility: hidden;
+   	top: 85%;
+   	width: 100%;
+   	min-height: 100px;
+   	border-radius: 0px;  
+  }
+
+  #content-navbar ul{ 
+  	display: flex;
+  	flex-direction: row;
+  	justify-content: space-between;
+  	margin: 5px 5px 5px -10px;
+  	padding: 10px;
+  	width: 100%;
+  }
+
+  #content-navbar li{
+    display: inline-block;
+    width: calc(100% / 10);
+    text-align: center;
+    margin-left: 0;
   }
 }
