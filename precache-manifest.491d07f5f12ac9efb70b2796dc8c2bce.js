@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/cage-the-elephant/static/media/after.cfb65a62.png"
   },
   {
-    "revision": "ebdaa18d01fbae45e03a",
+    "revision": "14f4850aef88fbf20a67",
     "url": "/cage-the-elephant/static/js/main.382eeef9.chunk.js"
   },
   {
@@ -92,8 +92,8 @@ self.__precacheManifest = [
     "url": "/cage-the-elephant/static/media/background-tile.3b1593ab.png"
   },
   {
-    "revision": "ebdaa18d01fbae45e03a",
-    "url": "/cage-the-elephant/static/css/main.61269d64.chunk.css"
+    "revision": "14f4850aef88fbf20a67",
+    "url": "/cage-the-elephant/static/css/main.b2dbfb4c.chunk.css"
   },
   {
     "revision": "e02ea8e722f3ab5f0391",
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/cage-the-elephant/static/css/11.874aea39.chunk.css"
   },
   {
-    "revision": "9d1981f1a14f1460731592ccb0121e75",
+    "revision": "abc0427742b1bc65fdd435e17e27a213",
     "url": "/cage-the-elephant/index.html"
   }
 ];
