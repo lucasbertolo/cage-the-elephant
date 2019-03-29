@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cage-the-elephant/precache-manifest.70c411c1ff7d5def76221e98659b79c0.js"
+  "/cage-the-elephant/precache-manifest.c05c3adc098d5ad47b3597ce5ca6f6dd.js"
 );
 
 workbox.clientsClaim();
