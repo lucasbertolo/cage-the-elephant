@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "url": "/cage-the-elephant/static/css/11.f67bc541.chunk.css"
   },
   {
-    "revision": "76834033dede8da3f4a54de0e3cb321e",
+    "revision": "cb306bb0796ab42e6c91fbfc0cb25f3e",
     "url": "/cage-the-elephant/index.html"
   }
 ];
