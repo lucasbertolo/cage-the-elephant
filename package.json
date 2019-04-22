@@ -4,18 +4,17 @@
   "private": true,
   "homepage": "https://lucasbertolo.github.io/cage-the-elephant",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.2",
     "react-google-maps": "^9.4.5",
-    "react-icons": "^3.0.4",
+    "react-helmet": "^5.2.0",
     "react-loadable": "^5.5.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "react-scrollspy": "^3.3.5",
-    "react-tooltip": "^3.6.1",
-    "tachyons": "^4.11.1"
+    "react-scripts": "^2.1.8",
+    "react-tooltip": "^3.6.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -24,5 +23,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

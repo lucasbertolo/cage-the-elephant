@@ -1,17 +1,18 @@
 #container-concerts {
-    width: 100%;
-    min-height: 600px;
+    min-width: 60%;
+    min-height: 60vh;
+    margin: auto;
+    display: flex;
 }
 
 #left-arrow, #right-arrow{
-    width: 15%;
-    height: 80%;
-    float: left;
+    height: 100%;
     font-size: 6em;
     text-align: center;
     color: rgba(0,0,0,0.7);
-    margin-top: 23%;
+    margin-top: 20vh;
     z-index: 1;
+    padding: 10px;
 }
 
 #left-arrow:hover, #right-arrow:hover{
@@ -20,15 +21,16 @@
 }
 
 .descr-show { 
-    width: 30%;
-    min-height: 40%;
+    min-width: 30%;
+    height: 30vh;
+    margin-top: 10vh;
     background-color: rgba(0,0,0,0.7);
     border: solid 2px  rgba(191,0,0,0.7);
     border-left: none;
-    margin-top: 21%;
-    float: left;
     text-align: right;
+    overflow: hidden;
 }
+
 .info-show h3, .info-show h4, .info-show h5 {
     margin: 10px;
     color: red;
@@ -39,10 +41,9 @@
 
 #googleMap {
     -webkit-filter: grayscale(100%);
-    width: 35%;
-    height: 450px;
-    margin-top: 10%;
-    float: left;
+    filter: grayscale(100%);
+    min-width: 45%;
+    border: 1px solid lightgrey;
 }
 
 #googleMap:hover {
@@ -61,28 +62,18 @@
 
 @media only screen and (max-width: 600px){
     .descr-show{
-        float:none;
-        width: 60%;
-        min-height: 200px;
-        position: absolute;
-        margin-left: 15%;
-        margin-top: 0;
+        width: 65%;
+        min-height: 270px;
         text-align: center;
     }
     #googleMap{
-       visibility: hidden
+        display: none;
     }
-    #right-arrow{
-        float: right;
+    #right-arrow, #left-arrow{
         font-size: 3em;
-    }
-    #left-arrow{
-        font-size: 3em;
-        float: left;
     }
 
     #container-concerts{
-        min-height: 300px;
-        margin-top: 55%;
+        margin: auto;
     }
 }

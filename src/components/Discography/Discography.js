@@ -1,7 +1,7 @@
 import React from 'react';
 import ModalDisco from '../Modals/ModalDisco';
 import './Discography.css';
-
+import Layout from '../Layout';
 
 class Discography extends React.Component{
 	constructor(props, context) {
@@ -11,7 +11,10 @@ class Discography extends React.Component{
 	      id: 0
 	    };
 	}
-
+	componentDidMount(){
+		this.props.setSection('Discography');
+	}
+	
   	handleShow = (event) => {
   		const id = Number(event.target.id.slice(-1));
     	return this.setState({ 
@@ -29,7 +32,7 @@ class Discography extends React.Component{
 		const listSources = sources.map((item) =>
 			<figure key={item.id}
 					onClick={this.handleShow}
-					className="mt5">
+					>
 				<img 					
 					src={item.source}
 					alt="disco" 
@@ -39,22 +42,23 @@ class Discography extends React.Component{
 			</figure>
 		);
 		return(
-		
-			<div className="container-position" id="disco">
-		    	<div>    
-		    		<ModalDisco 
-						show={this.state.show}
-		            	onHide={this.handleHide}
-		            	disco={sources}
-		            	id={this.state.id} 
-         			 />        	
-		        	<div className="container-disco mt7">
-			        	<div id="carousel">
-							{listSources}							
-			        	</div>	   
-		 			</div>
-		    	</div>
-		    </div>
+			<Layout title='Cage the Elephant - Discography'>    
+				<div className="container-position" id="disco">
+			    		<ModalDisco 
+							show={this.state.show}
+			            	onHide={this.handleHide}
+			            	disco={sources}
+			            	id={this.state.id} 
+	         			 /> 
+	         			<div className='wrapper-disco'>       	
+				        	<div className="bg-carousel">
+					        	<div id="carousel">
+									{listSources}							
+					        	</div>	   
+				 			</div>
+			 			</div>
+			    </div>
+			</Layout>
 		);
 	}
 }

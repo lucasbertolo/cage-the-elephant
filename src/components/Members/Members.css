@@ -13,16 +13,33 @@
 	cursor: pointer;
 }
 
+.content-members{
+	display: flex;
+	justify-content: center;
+}
+
+#members-image{
+	position: absolute;
+	margin-top: 100px;
+}
+
 .bounding-box:hover{
 	box-shadow: 0 0 0 3px rgba(244,244,233,1) inset;
 }
 
-#members-image { margin-left: 15%; }
+#inputImage{
+	height: 80vh;
+}
 
 @media only screen and (max-width: 768px) {
-	#members-image{ margin-left: 5%;  margin-top: 5%;}
-}
-@media only screen and (max-width: 600px) {
-	#members-image{ margin-left: 0px;  margin-top: 45%;}
+	#members-image{
+		width: 100%;
+		box-shadow: none;
+	}
+	#inputImage{
+		width: 100%;
+		margin: 0;
+		height: 60vh;
+	}
 }
 

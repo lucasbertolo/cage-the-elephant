@@ -24,7 +24,7 @@
   	content : "";
   	position: absolute;
   	left    : 50%;
-  	bottom  : 25%;
+  	bottom  : 40%;
   	height  : 1px;
  	  width   : 3%;  /* or 100px */
 	  border-left: 10px solid transparent; 
@@ -35,8 +35,8 @@
 .title:after {
   	content : "";
   	position: absolute;
-  	left    : 42%;
-  	bottom  : 95%;
+  	left    : 44%;
+  	bottom  : 90%;
   	height  : 1px;
  	  width   : 20%;  /* or 100px */
 	  border-bottom: 10px solid rgba(191,0,0,0.7); 
@@ -55,6 +55,12 @@
   font-size: 4em;
 }
 
+.wrapper-logo{
+  justify-content: center;
+  margin: auto;
+  min-width: 400px;
+}
+
 @media only screen and (max-width: 768px) {
   .moon{ 
     margin-bottom: 50px; 
@@ -62,5 +68,10 @@
   }
   .title:after{
     left: 45%;
+  }
+
+  .wrapper-logo{
+    min-width: 80%;
+    width: 80%;
   }
 }

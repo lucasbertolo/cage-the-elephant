@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Modal} from 'react-bootstrap';
 import './ModalDisco.css';
-import {FaDownload} from 'react-icons/fa';
+// import {FaDownload} from 'react-icons/fa';
  
 class ModalDisco extends React.Component { 
 
@@ -13,7 +13,7 @@ class ModalDisco extends React.Component {
        <tbody key={index} id="list-sounds">
         <tr id="modal-sounds">           
           <td>{music}</td>  
-          <td><FaDownload/></td>         
+          
         </tr>
         </tbody>
       );

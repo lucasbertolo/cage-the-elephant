@@ -1,10 +1,9 @@
 #header{
 	background-color: rgba(5, 0, 0, 0.7);
-	height: 50px;
+	min-height: 50px;
 	position: fixed;
     z-index: 1;
 	top: 0;
-	color: rgba(213, 74, 74, 1);
 	width: 100%;
 	display: flex;
 	padding: 2px;
@@ -14,28 +13,81 @@
 #img-logo{
 	width: 60px;
 	height: 60px;
-	margin-left: 50%;
 	padding: 5px;
+	margin-top: 10px;
 }
 
 #social{
-	font-size: 1.4em;
-	width: 25%;
+	font-size: 1.2em;
+	margin: 2px;
+	width: 8%;
+	display: flex;
 }
 
 #container-logo{
-	width: 25%;
+	width: 10%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#menu{
+	margin: 3px 20px 0 -10px;
+	display: none;
+	font-size: 1.5em;
+}
+
+#mobile{
+	height: 60vh;
+	background-color: rgba(5, 0, 0, 0.7);
+	border-top: 1px solid #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	display: none;
+	width: 100%;
+	top: 73px;
+	position: fixed;
+	z-index: 100;
+}
+
+#mobile section {
+	text-align: center;
+	font-size: 1.4em;
+	padding: 12px;
+}
+
+#mobile section a {
+	cursor: pointer;
+	color: #fff;
 }
 
 #section-name{
 	width: 30%;
-	text-align: right;
+	text-align: center;
+	color: #E15634;
+	display: flex;
+	text-transform: uppercase;
+}
+
+#section-name h1 {
+	margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
   #header{
-  	font-size: 0.8em;
+  	font-size: 1em;
+  }
+  #social{
+  	display: none;
   }
 
-  #img-logo{margin-left: 30%}
+  #menu{
+  	display: block;
+  }
+  #section-name{
+  	margin: 20px;  	
+  }
+
+  #section-name h1{ font-size: 1.7em; }
+
 }

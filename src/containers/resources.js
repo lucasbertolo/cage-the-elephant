@@ -77,7 +77,27 @@ export const SOURCES = [
     		"Flow"
     	]
     }
-  }
+  },
+  {
+    source: "https://al8cddccn.cloudimg.io/width/250/webp-lossy-70.png-lossy-70/i.imgur.com/1LqjAn2.png",
+    id: 'Cage4',
+    music : {
+        title: "Cage The Elephant 2",
+        sounds: [
+            "In One Ear",
+            "James Brown",
+            "Ain't No Rest For The Wicked",
+            "Tiny Little Robots",
+            "Lotus",
+            "Back Against The Wall",
+            "Drones In The Valley",
+            "Judas",
+            "Back Stabbin' Betty",
+            "Soil To The Sun",
+            "Free Love"
+        ]
+    }
+  },
 ]
 
 export const CONCERTS = [
@@ -121,12 +141,12 @@ export const CONCERTS = [
 export const MEMBERS = [
     {
         name: 'Nick Bockrath',
-        img: 'http://medias.photodeck.com/5bf71ee1-f03d-4b13-9ee3-5146acde867a/HR-CageTheElephant-SpringFling-12Mar2016-1392_xgaplus.jpg',
+        img: 'https://al8cddccn.cloudimg.io/width/250/webp-lossy-70.png-lossy-70/http://medias.photodeck.com/5bf71ee1-f03d-4b13-9ee3-5146acde867a/HR-CageTheElephant-SpringFling-12Mar2016-1392_xgaplus.jpg',
         bio: 'Later I write this'
     } ,
 	{
 		name: "Brad Shultz",
-        img: "https://imageshack.com/i/plXPgNcMj",
+        img: "https://al8cddccn.cloudimg.io/width/250/webp-lossy-70.png-lossy-70/https://imageshack.com/i/plXPgNcMj",
 		bio: "Bowling Green, Kentucky only has a population of 61,000. It seems like a big number, but" 
 + "when you really look at it, it’s only about 0.007% of the population in New York City. It’s a tiny fraction of" 				
 + "a percent. If you look up what the city is famous for, it’s hard to find an answer. So when brothers Matt "
@@ -140,7 +160,7 @@ export const MEMBERS = [
 	},
     {
         name: "Matt Shultz",
-        img: "https://imageshack.com/i/pmE4vYu2j",
+        img: "https://al8cddccn.cloudimg.io/width/250/webp-lossy-70.png-lossy-70/https://imageshack.com/i/pmE4vYu2j",
         bio: "Matt grew up in Bowling Green, Kentucky, with his brother, Brad, who is a year older and"    
 + "also in Cage the Elephant."
 + " They came from a poor background and were sometimes teased for this. Brad was called 'Poor Boy' by "
@@ -155,18 +175,18 @@ export const MEMBERS = [
 	
 	{
 		name: "Mathan Minster",
-        img: "https://imageshack.com/i/pnyGMbHwj",
+        img: "https://al8cddccn.cloudimg.io/width/250/webp-lossy-70.png-lossy-70/https://imageshack.com/i/pnyGMbHwj",
 		bio: "Matthan Minster has recently moved to Portland, Oregon with his bandmates to pursue a career"
 + "in music. In 2004 he completed a soundtrack for a University of Texas student film entitled The Gulf"
 	},
     {
         name: "Jared Champion",
-        img: "https://imageshack.com/i/pnUy6H5yj",
+        img: "https://al8cddccn.cloudimg.io/width/250/webp-lossy-70.png-lossy-70/https://imageshack.com/i/pnUy6H5yj",
         bio: "Does anyone know anything about this guy?"
     },
     {
         name: "Daniel Tichenor",
-        img: "https://imageshack.com/i/poCbtWFcj",
+        img: "https://al8cddccn.cloudimg.io/width/250/webp-lossy-70.png-lossy-70/https://imageshack.com/i/poCbtWFcj",
         bio: "'COME A LITTLE CLOSER,' THE FIRST SINGLE FROM Cage The Elephant’s third album, Melophobia," 
 + "is steered by the powerful bass of Daniel Tichenor. His thick, muted picking on the song conveys all of the"                 
 + "grittiness that is found on the rest of the album, where Tichenor stands out with a variety of funky, galloping,"

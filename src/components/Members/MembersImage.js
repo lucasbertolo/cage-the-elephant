@@ -20,9 +20,9 @@ class MembersImage extends React.Component{
 		});
 
 		return(
-			<div className="absolute mt6" id="members-image">	
+			<div id="members-image" className='shadow'>	
 			    	<span>
-		            	<img id='inputImage' src={this.props.imageUrl} alt='img' width='615px' height="auto" className="shadow-5"/>
+		            	<img id='inputImage' src={this.props.imageUrl} alt='img'/>
 		            	{square}
 		            </span>
 	        </div>

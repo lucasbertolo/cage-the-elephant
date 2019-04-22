@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import Layout from '../Layout';
 
 class Contact extends React.Component{
 	constructor(props){
@@ -12,6 +13,10 @@ class Contact extends React.Component{
 		}
 	}
 
+	componentDidMount(){
+		this.props.setSection('Contact');
+	}
+	
 	onNameChange = (event) => {
 		this.setState({name: event.target.value, sendStatus: ''});
 		this.setState({sendStatus: ''});
@@ -56,53 +61,55 @@ class Contact extends React.Component{
 
 	render(){
 		return(
-			<div id="contact" className="container-position">	        
-				<div id="wrap">	
-					<div id='form_wrap' className="mt7">
-						<div id="form">
-							<p>Dear Cage,</p>
-							<textarea  
-								name="message" 
-								placeholder="Your message" 
-								id="message"
-								value={this.state.message}
-								onChange={this.onMessageChange}
-								required
-							>
-							</textarea>
-							<p>Best,</p>
-	            
-							<label htmlFor="name">Name: </label>
-							<input 
-								type="text" 
-								name="name" 
-								id="name"
-								value={this.state.name}
-								onChange={this.onNameChange} 
-								required 
-							/>
+			<Layout title='Cage the Elephant - Contact'>    
+				<div id="contact" className="container-position">	        
+					<div id="wrap">	
+						<div id='form_wrap'>
+							<div id="form">
+								<p>Dear Cage,</p>
+								<textarea  
+									name="message" 
+									placeholder="Your message" 
+									id="message"
+									value={this.state.message}
+									onChange={this.onMessageChange}
+									required
+								>
+								</textarea>
+								<p>Best,</p>
+		            
+								<label htmlFor="name">Name: </label>
+								<input 
+									type="text" 
+									name="name" 
+									id="name"
+									value={this.state.name}
+									onChange={this.onNameChange} 
+									required 
+								/>
 
-							<label htmlFor="email">Email: </label>
-							<input 
-								type="email" 
-								name="email" 
-								id="email" 
-								value={this.state.email}
-								onChange={this.onEmailChange}
-								required 
-							/>	            
-							<input 
-								type="submit" 
-								name ="submit" 
-								value="Send, we'll contact you soon!" 
-								id='btnSubmit'
-								onClick={this.onSubmit}
-							/>
-							<h4 className="mt4 ml5" style={{fontStyle: 'italic'}}>{this.state.sendStatus}</h4>
-						</div>		
-					</div>    
+								<label htmlFor="email">Email: </label>
+								<input 
+									type="email" 
+									name="email" 
+									id="email" 
+									value={this.state.email}
+									onChange={this.onEmailChange}
+									required 
+								/>	            
+								<input 
+									type="submit" 
+									name ="submit" 
+									value="Send, we'll contact you soon!" 
+									id='btnSubmit'
+									onClick={this.onSubmit}
+								/>
+								<h4 className="sendstatus" style={{fontStyle: 'italic'}}>{this.state.sendStatus}</h4>
+							</div>		
+						</div>    
+					</div>
 				</div>
-			</div>
+			</Layout>
 		);
 	}
 }

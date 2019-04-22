@@ -5,7 +5,7 @@ class Concerts extends React.Component {
 	render() {
 		const {concerts, counter} = this.props;
 		return (
-			  <div className="descr-show">
+			  <div className="descr-show shadow">
 	          	<div className="info-show">
 	          		<h3 id="data-show">{concerts[counter].date}</h3>
 	          		<h4 id="name-show">{concerts[counter].local}</h4>

@@ -1,8 +1,13 @@
 import React from 'react';
 import './Members.css';
+
+//subcomponents
 import ModalMember from '../Modals/ModalMember';
 import MembersImage from './MembersImage';
+import Warning from '../Warning/Warning';
+import Layout from '../Layout';
 
+const message = 'Click on their face to get more details'
 class Members extends React.Component{
     constructor(props, context) {
         super(props, context);
@@ -11,9 +16,14 @@ class Members extends React.Component{
           id: 0,
           box: [],
           imageUrl: 'https://al8cddccn.cloudimg.io/width/615/webp-lossy-70.png-lossy-70/i.imgur.com/uldYNeq.png',
+          reminder: true,
         };
     }
 
+
+    handleReminder = () => {
+         return this.setState({reminder: false})
+    }
     //MODAL FUNCTIONS - SHOW AND HIDE
     handleShow = (event) => {
         const id = Number(event.target.id.slice(-1));
@@ -30,6 +40,7 @@ class Members extends React.Component{
   
     //FETCHING THE CLARIFAI API - TO RECOGNIZE THE GUYS'FACES 
     componentDidMount(){
+      this.props.setSection('Members')
       fetch('https://secure-waters-51389.herokuapp.com/image', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
@@ -74,8 +85,9 @@ class Members extends React.Component{
     render(){
         const {box, imageUrl} = this.state;
     
-        return(           
-          <div className='content-members container-position' id= "members">
+        return(       
+        <Layout title='Cage the Elephant - Members'>    
+          <div className='content-members container-position' id="members">
             <MembersImage box={box}
                           imageUrl={imageUrl} 
                           handleShow={this.handleShow}/>
@@ -85,7 +97,12 @@ class Members extends React.Component{
                           members={this.props.members}  
                           id={this.state.id}                      
            />
+            <Warning     
+              handleReminder={this.handleReminder}
+              reminder={this.state.reminder}
+              message={message}/> 
           </div>
+        </Layout>
         );
     }
 }

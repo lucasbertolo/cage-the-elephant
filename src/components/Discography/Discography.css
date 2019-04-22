@@ -1,5 +1,11 @@
-.container-disco{
-	margin: 1% auto;
+.wrapper-disco{
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+
+.bg-carousel{
+	margin: auto;
 	width: 210px;
 	height: 140px;
 	position: relative;
@@ -20,14 +26,15 @@
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 100%;
-	left: 10px;
-	top: 10px;		
+/*	height: 50%;
+*/	left: 0;
+	top: 100px;		
 }
-#carousel figure:nth-child(1){  transform:   rotateY(0deg)  translateZ(288px); }
-#carousel figure:nth-child(2) { transform: rotateY(90deg) translateZ(288px);}
-#carousel figure:nth-child(3) { transform: rotateY(180deg) translateZ(288px);}
-#carousel figure:nth-child(4) { transform: rotateY(270deg) translateZ(288px);}
+#carousel figure:nth-child(1){  transform: rotateY(0deg)  translateZ(200px); }
+#carousel figure:nth-child(2) { transform: rotateY(70deg) translateZ(200px);}
+#carousel figure:nth-child(3) { transform: rotateY(140deg) translateZ(200px);}
+#carousel figure:nth-child(4) { transform: rotateY(210deg) translateZ(200px);}
+#carousel figure:nth-child(5) { transform: rotateY(280deg) translateZ(200px);}
 
 .disco-img{
 	-webkit-filter: grayscale(1);
@@ -35,8 +42,8 @@
 	transition: all .5s ease;
 	border-radius: 50%;
 	width: 250px;
-	height: 250px;
-	border: 1px solid black;
+/*	height: 250px;
+*/	border: 1px solid black;
 }
 .disco-img:hover{
 	-webkit-filter: grayscale(0);
@@ -49,6 +56,20 @@
 	to{
 		transform: rotateY(360deg);
 	}
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  .bg-carousel{
+  	width: 100px;
+  }
+
+  	#carousel figure{
+		width: 200px;
+	}
+
+	.disco-img{width: 200px}
+
 }
 
 
